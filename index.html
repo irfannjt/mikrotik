@@ -1,37 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Free MikroTik RouterOS Online Tools - By Irfannjt.Github.io</title>
-<meta name="google-site-verification" content="google-site-verification=v9jfwyACp9axJqzwm1GlUgutNsmz-gLAg37rIqsnln0">
+<title>MikroTik Script RouterOS - mikrotikscript.Github.io</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content='Free MikroTik RouterOS Online Tools, the most complete Router tools to make it easier for you maker RouterOS Mikrotik scripts!
-By mikrotiktool.Github.io' name='description'/>
-<meta content='tool, pcc, queue, vpn, setting mikrotik, mikrotik, router, winbox, termimal, rsc, script, hotspot, wirelessm rtrwnet' name='keywords'/>
+<meta content='Complete MikroTik RouterOS Script DataBase Unoffical, Enjoy the most complete script to make it easier for you to learn Mikrotik RouterOS scripts!' name='description'/>
+<meta content='RouterOS, Mikrotik Script, load balancing, pcc, LB, script generator, mikrotik, router, winbox, termimal, rsc, script, hotspot, wireless, rtrwnet' name='keywords'/>
 <meta content='index, follow, noodp' name='robots'/>
-<link rel="shortcut icon" href="https://irfannjt.github.io/script/favicon.ico" type="image/x-icon"> 
-<meta property="og:title" content="MikroTik Online Tools (Unofficial) ">
-<meta property="og:description" content="MikroTik Online Tools (Unofficial) ">
-<meta property="og:image:alt" content="MikroTik Online Tools (Unofficial) ">
+<link rel="shortcut icon" href="https://mikrotiktool.github.io/favicon.ico" type="image/x-icon"> 
+<meta property="og:title" content="MikroTik RouterOS Script - mikrotiktool">
+<meta property="og:description" content="MikroTik RouterOS Script DataBase Unoffical - mikrotiktool">
+<meta property="og:image" content="https://user-images.githubusercontent.com/42666125/111909594-8074e400-8a90-11eb-8d98-5dfe4b21c657.png">
+<meta property="og:image:alt" content="Mikrotik RouterOS Script">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://irfannjt.github.io/script/">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3815059393374366" crossorigin="anonymous"></script>
-<style> 
-body {
-background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #8E2DE2, #4A00E0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #8E2DE2, #4A00E0 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+<meta property="og:url" content="https://irfannjt/script.github.io/script/">	
+<style>
+/* ----------------------------------------------
+#################################################
+# MIKROTIK RouterOS [ SCRIPT ]  DATABASE
+# Date/Time : 01/02/2021, 12:10:14 AM
+# Designer  : Agus Ramadhani / mikrotiktool
+# Site      : http://www.o-om.com
+# Sosmed    :  	
+#################################################
+----------------------------------------------- */  
+* {-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;-ms-transition: all .3s ease-in;transition: all .3s ease-in;}
+body, div, span, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, textarea, p, blockquote, th, td, tr, table{margin:0; padding:0}
+body {margin:20px;background:#fff;
 -ms-text-size-adjust: 100%;
--webkit-text-size-adjust:100%;
-line-height:2.0;
-font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+-webkit-text-size-adjust: 100%;
+color: #24292e;
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 font-size: 16px;
 word-wrap: break-word;
 }
-h1, h2 {font-size: 25px; border-bottom:0px solid #ddd; margin-bottom:20px; color:#000;line-height:1.5}
-h3, h4, h5, h6{font-size: 20px; border-bottom:1px solid #ddd; margin-bottom:10px; padding-botto:10px; color:#000;line-height:1.5}
-
 pre {
 white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
 white-space: -pre-wrap; /* Opera */
@@ -39,390 +43,765 @@ white-space: -o-pre-wrap; /* Opera */
 white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
 word-wrap: break-word; /* IE 5.5+ */
 }
-b{font-size:17px}
-p {
-padding:0;
-margin:5px 5px 0 17px;
-display:list-item;
-list-style: square;
-}
-.logo {
-padding-top:10px;
-padding-bottom:15px;  
-margin-bottom:0px;
-color: #111;
-text-decoration:none;
-font-size:30px;
-font-weight:bold; 
-border-bottom:0px solid #ccc;
-text-align:center;
-}	
-.logo a{
-color:#111 !important;
-}
 * {
 box-sizing: border-box;
 }
-.content {
-max-width:900px;
+p {
+display:list-item;
+list-style: square;
+padding:3px 0 3px 0;
+margin:0 0 0 22px;
+color:#999
+}
+.logo {
+border-bottom:0px solid #ccc;
+margin-bottom:5px;
+margin-top:10px;
+color: #111;
+font-size:30px;
+font-weight:bold; 
+}	
+.logo a{
+color:#111 !important;
+text-decoration:none !important;
+font-size:30px;
+text-decoration:none;
+}
+.logo-left {
+float:left;
+}
+.logo-right {
+float:right;
+}
+#wrap{
+max-width:1180px;
 min-width:200px;
 margin:0 auto;
-padding: 20px;
-border-radius: 3px;
-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.header{
+padding:10px;
+padding-top:10px;
+padding-bottom:5px;
+display:block;
+background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:#fff;
+border-top:1px solid #ccc;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+}
+.header a{
+color:#8E2DE2 !important;
+text-decoration:none !important;
+}
+.header-left {
+float:left;
+width:450px;
+}
+.header-right {
+float:right;
+margin-top:-2px;
+}
+.content{
+float:right;
+width:64%;
+padding: 0px;
+border:1px solid #ccc;
 background:#fff;
+height: 750px;
 }
-/* unvisited link */
+.sidebar{
+overflow:hidden;
+float:left;
+width:36%;
+padding: 10px;
+background-color:#eee;
+border:1px solid #ccc; 
+height: 750px;
+}
+.footer{
+font-size:14px;
+border-top:4px solid #ccc;
+padding:10px;
+background:#fff;
+color:#111;
+clear:both;
+width:auto;
+text-align:center;
+}
+.footer a{
+color:#8E2DE2 !important;
+}
+h1 {
+color:#fff;
+font-size:20px;
+margin-top:-2px;
+}
+h2 {
+color:#8E2DE2;
+font-size:20px;
+}
+.active1, .linkPress:hover, p{
+color:#8E2DE2 !important;
+}
 a:link {
-  color: #8E2DE2;
-  text-decoration:none;
+color: #333;
+text-decoration:none
 }
-/* visited link */
 a:visited {
-  color: #8E2DE2;
-  text-decoration:none;
+color: #333;
+text-decoration:none
 }
-/* mouse over link */
 a:hover {
-  color: #000;
+color: #333;
+}
+a:active {
+color: #333;
+}
+button {
+color: #fff;
+background-color: #8E2DE2;
+border-color: #8E2DE2;
+border-radius: 2px;
+border:none;
+margin-top:0px;
+padding:5px;
+width:70px;
+font-size:16px;
+font-weight:bold;
+}
+input[type=text], select, textarea {
+width: 100%;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 0px;
+resize: vertical;
+font-size:16px !important;
+}
+label {
+padding: 5px 5px 5px 0;
+display: inline-block;
+}
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 13px 20px;
+border: none;
+border-radius: 1px;
+cursor: pointer;
+float: right;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.list-game {
+border-radius:0;
+height:655px;
+background:white;
+overflow: scroll;
+overflow-x: hidden;
+width: 100%;
+margin-top:3px;
+padding: 0px;
+border: 1px solid #ccc;
+}
+.list-game label {
+padding: 0;
+display: inline-block;
+} 
+.list-mangle {
+height: 737px;
+background:#fff;
+width: 100%;
+padding-left: 8px;
+padding-right: 10px;
+margin:0;
+border: 0px solid #ccc;
+}
+.mytable { overflow-x:hidden;
+height:218px;
+margin:0;
+border: 0px solid #ccc;
+}
+table {
+border-collapse:collapse;
+width: 100%;
+}
+tr{
+width:100%;
+border: 1px solid #f0f0f0;
+background: #f5f5f5;
+}
+tr:nth-child(even) {
+background: #fff;
+width:100%;
 }
 @media screen and (max-width: 1024px){
-body{
-background: #fff !important;
-padding:10px;  
+.bookmark-font {font-size:25px; text-align:center}
+body {margin:0px;background:#fff;}
+.footer{border:0}
+.logo{
+margin-left:10px;
+margin-right:10px;
 }
-.content {
-max-width:100%;
+#wrap{
 padding:0;
-border-radius: 3px;
-box-shadow: 0 0 0 0;
+margin:0;
+width:100%;
+height:100%;
+}
+.sidebar {
+border:0px solid #ccc;
+width:100%;
+height:100%;
+overflow: hidden;
 background:#fff;
+}
+.list-game {
+width:100%;
+height:100%;
+overflow: hidden;
+}
+.list-mangle {
+height:100%;
+}
+.content, .welcome, .list-mangle {
+display:none;
+}
+}
+@media screen and (max-width: 734px){
+button {
+margin-top:5px;
 }  
-.logo {font-size:28px;}  
-}  
-/* selected link */
-a:active {
-  color: #8E2DE2;
-  text-decoration:none;
-  margin-top:10px !important;
+.header{
+height:auto;    
+}   
+.header-left, .header-right {
+float:none;
+display:block;
+width:auto;
 }
-.resp-sharing-button__link,
-.resp-sharing-button__icon {
-  display: inline-block
 }
-.resp-sharing-button__link {
-  text-decoration: none;
-  color: #fff;
-  margin: 0.5em
+@media screen and (max-width: 550px){
+.logo-left a{
+font-size:25px;
+}	
+.logo-left, .logo-right {
+float:none;
+display:block;
+width:auto;
+   text-align: center 
 }
-.resp-sharing-button {
-  border-radius: 5px;
-  transition: 25ms ease-out;
-  padding: 0.5em 0.75em;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+.header-left, .header-right {
+  text-align: center
+} 
 }
-.resp-sharing-button__icon svg {
-  width: 1em;
-  height: 1em;
-  margin-right: 0.4em;
-  vertical-align: top
+iframe {
+width:100%;
+height:520px;
+border:0 
 }
-.resp-sharing-button--small svg {
-  margin: 0;
-  vertical-align: middle
+.welcome {
+width:100%;
+height:520px;
+padding:10px;
 }
-/* Non solid icons get a stroke */
-.resp-sharing-button__icon {
-  stroke: #fff;
-  fill: none
+.welcome a{
+color:#8E2DE2 !important;
 }
-/* Solid icons get a fill */
-.resp-sharing-button__icon--solid,
-.resp-sharing-button__icon--solidcircle {
-  fill: #fff;
-  stroke: none
+.backtotop {
+background:#ccc;
+text-align:center;
+width: 100%;
+border-radius:0 0 4px 4px;
+height:27px;
+color: #444;
 }
-.resp-sharing-button--twitter {
-  background-color: #55acee
+.backtotop a {
+font-size:11px; 
+padding:0;
+color:#444;
+font-weight: bold;
+width: 100%;
+text-transform: uppercase;
+background:#ccc;
 }
-.resp-sharing-button--twitter:hover {
-  background-color: #2795e9
+.backtotop a:hover {
+color:#8E2DE2;
 }
-.resp-sharing-button--pinterest {
-  background-color: #bd081c
-}
-.resp-sharing-button--pinterest:hover {
-  background-color: #8c0615
-}
-.resp-sharing-button--facebook {
-  background-color: #3b5998
-}
-.resp-sharing-button--facebook:hover {
-  background-color: #2d4373
-}
-.resp-sharing-button--tumblr {
-  background-color: #35465C
-}
-.resp-sharing-button--tumblr:hover {
-  background-color: #222d3c
-}
-.resp-sharing-button--reddit {
-  background-color: #5f99cf
-}
-.resp-sharing-button--reddit:hover {
-  background-color: #3a80c1
-}
-.resp-sharing-button--google {
-  background-color: #dd4b39
-}
-.resp-sharing-button--google:hover {
-  background-color: #c23321
-}
-.resp-sharing-button--linkedin {
-  background-color: #0077b5
-}
-.resp-sharing-button--linkedin:hover {
-  background-color: #046293
-}
-.resp-sharing-button--email {
-  background-color: #777
-}
-.resp-sharing-button--email:hover {
-  background-color: #5e5e5e
-}
-.resp-sharing-button--xing {
-  background-color: #1a7576
-}
-.resp-sharing-button--xing:hover {
-  background-color: #114c4c
-}
-.resp-sharing-button--whatsapp {
-  background-color: #25D366
-}
-.resp-sharing-button--whatsapp:hover {
-  background-color: #1da851
-}
-.resp-sharing-button--hackernews {
-background-color: #8E2DE2
-}
-.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
-.resp-sharing-button--vk {
-  background-color: #507299
-}
-.resp-sharing-button--vk:hover {
-  background-color: #43648c
-}
-.resp-sharing-button--facebook {
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-.resp-sharing-button--facebook:hover,
-.resp-sharing-button--facebook:active {
-  background-color: #2d4373;
-  border-color: #2d4373;
-}
-.resp-sharing-button--twitter {
-  background-color: #55acee;
-  border-color: #55acee;
-}
-.resp-sharing-button--twitter:hover,
-.resp-sharing-button--twitter:active {
-  background-color: #2795e9;
-  border-color: #2795e9; 
-}
-.resp-sharing-button--tumblr {
-  background-color: #35465C;
-  border-color: #35465C;
-}
-.resp-sharing-button--tumblr:hover,
-.resp-sharing-button--tumblr:active {
-  background-color: #222d3c;
-  border-color: #222d3c;
-}
-.resp-sharing-button--email {
-  background-color: #777777;
-  border-color: #777777;
-}
-.resp-sharing-button--email:hover,
-.resp-sharing-button--email:active {
-  background-color: #5e5e5e;
-  border-color: #5e5e5e;
-}
-.resp-sharing-button--pinterest {
-  background-color: #bd081c;
-  border-color: #bd081c;
-}
-.resp-sharing-button--pinterest:hover,
-.resp-sharing-button--pinterest:active {
-  background-color: #8c0615;
-  border-color: #8c0615;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #8E2DE2;
+  color: white;
   cursor: pointer;
+  padding: 8px;
+  border-radius: 3px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+#CbiJvKRogXqD {
+display: none;
+background: #000;
+text-align: center;
+font-weight: bold;
+color: #fff;
+font-size: 4.0vw;
+position: fixed;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+opacity: 0.7;
+z-index:99;
+padding:150px;
 }
 </style>
 </head>
-<body onLoad="callmodal()">
-<div class="content">
-<div class="logo">	  
-<a href="https://mikrotiktool.github.io"><span style="color:#8E2DE2 !important">irfannjt</span>.Github.io</a> <img style="margin-left:10px" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmikrotiktool.github.io%2F&count_bg=%23C83D3D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=pageview&edge_flat=false" alt="Hits"/>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="CbiJvKRogXqD">
+PLEASE DISABLE YOUR AD BLOCKER FOR SUPPORT THIS SITE! THANKS :)
+</div>
+<div id="wrap">	
+<div class="logo">	
+<span class="logo-left"><a href="https://irfannjt.github.io/script/"><span style="color:#8E2DE2 !important">mikrotikscript</span>.Github.io</a> </span>
+<span class="logo-right"><img style="padding-top:12px" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Firfannjt.github.io/script/%2F&count_bg=%23C83D3D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=pageview&edge_flat=false" alt="Hits"/></span>
+<div style='clear: both;'></div>
+</div>
+<div class="header">
+<span class="header-left">
+<span style="float:left; margin-right:6px; margin-top:-2px">
+<a href="https://irfannjt.github.io/script/mikrotik/"><img src="https://irfannjt.github.io/script/mikrotik/img/logo.png" alt="Mikrotik Script RouterOS"></a>
+</span>
+<h1>MIKROTIK SCRIPT ROUTEROS DATABASE</h1>
+</span>
+<span class="header-right"><b>Contribution your script</b> <button style="margin-left:5px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfbuzYtFCI57y7nJHgnL1w0aiCY5g45Uon90u3XQm6pAi56BQ/viewform';">upload</button></span>
+<div style='clear: both;'></div>
 </div>	
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- mikrotiktool -->
+<div class="sidebar">
+<input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="search script.." style="width:100%;margin-bottom:7px;font-size: 16px"> 
+<div class="list-game">
+<div class="bookmark-font">
+<span style="padding-left:6px;padding-top:5px;font-weight:bold; text-align:center">
+<a id="top"></a>
+<a href="#A"><span style="color:#8E2DE2">A</span></a>
+<a href="#B"><span style="color:#000">B</span></a>
+<a href="#C"><span style="color:#8E2DE2">C</span></a>
+<a href="#D"><span style="color:#000">D</span></a>
+<a href="#E"><span style="color:#8E2DE2">E</span></a>
+<a href="#F"><span style="color:#000">F</span></a>
+<a href="#G"><span style="color:#8E2DE2">G</span></a>
+<a href="#H"><span style="color:#000">H</span></a>
+<a href="#I"><span style="color:#8E2DE2">I</span></a>
+<a href="#J"><span style="color:#000">J</span></a>
+<a href="#K"><span style="color:#8E2DE2">K</span></a>
+<a href="#L"><span style="color:#000">L</span></a>
+<a href="#M"><span style="color:#8E2DE2">M</span></a>
+<a href="#N"><span style="color:#000">N</span></a>
+<a href="#O"><span style="color:#8E2DE2">O</span></a>
+<a href="#P"><span style="color:#000">P</span></a>
+<a href="#Q"><span style="color:#8E2DE2">Q</span></a>
+<a href="#R"><span style="color:#000">R</span></a>
+<a href="#S"><span style="color:#8E2DE2">S</span></a>
+<a href="#T"><span style="color:#000">T</span></a>
+<a href="#U"><span style="color:#8E2DE2">U</span></a>
+<a href="#V"><span style="color:#000">V</span></a>
+<a href="#W"><span style="color:#8E2DE2">W</span></a>
+<a href="#X"><span style="color:#000">X</span></a>
+<a href="#Y"><span style="color:#8E2DE2">Y</span></a>
+<a href="#Z"><span style="color:#000">Z</span></a>
+</span>
+</div>
+<table id="myTable">
+<!-- A -->
+<tr><td><span id="A" style="margin-left:5px; font-weight:bold">A</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/anti-hack-bootloader.html" onclick="getcontent(this); return truefalseFunction(x);">Anti Hack Protected BootLoader</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/auto-fix-sntp-client-and-timezone-for-indonesia-country.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Fix SNTP and Clock for Indonesia Timezone</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Auto-Simple-Queue-From-DHCP-Server.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Simple Queue From DHCP Server</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Auto-Connect-to-Internet-With-DHCP-Client.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Connect to Internet With DHCP Client</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Auto-Repair-Passthrough-In-Mangle.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Repair Passthrough In Mangle</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/auto-backup-filename-backup-and-send-to-gmail.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Backup Filename.backup and Send To Gmail</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/auto-backup-filename-rsc-and-send-to-gmail.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Backup Filename.rsc and Send To Gmail</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Automated-Usage-Script-without-usermanager.html" onclick="getcontent(this); return truefalseFunction(x);">Automated Usage Script Without User Manager</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Allow-use-ofntporg-pool-service-for-NTP.html" onclick="getcontent(this); return truefalseFunction(x);">Allow Use Of ntp.org Pool Service For NTP</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Auto-upgrade-script-V3x.html" onclick="getcontent(this); return truefalseFunction(x);">Auto upgrade script V3.x</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Audible-signal-test.html" onclick="getcontent(this); return truefalseFunction(x);">Audible Signal Test</a></p></td></tr>	
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/A-Bit-of-Sounds.html" onclick="getcontent(this); return truefalseFunction(x);">A Bit of Sounds</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/add-a-data-limit-to-trial-hotspot-users.html" onclick="getcontent(this); return truefalseFunction(x);">Add a Data Limit To Trial Hotspot Users</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Auto-Update-RouterOS-Package-From-Script.html" onclick="getcontent(this); return truefalseFunction(x);">Auto Update RouterOS Package From Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/ARP-Table-To-Dynamic-Simple-Queue.html" onclick="getcontent(this); return truefalseFunction(x);">ARP Table To Dynamic Simple Queue</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Add-Static-DHCP-Leases-to-ARP-List.html" onclick="getcontent(this); return truefalseFunction(x);">Add Static DHCP Leases to ARP List</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Alignment-Script-that-reads-back-RSSI-with-Beeps.html" onclick="getcontent(this); return truefalseFunction(x);">Alignment Script that "reads back" RSSI with Beeps</a></p></td></tr>
+<!-- B -->
+<tr><td><span id="B" style="margin-left:5px; font-weight:bold">B</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Block-Sites-User-Keywords-Use-The-Dns-Cache.html" onclick="getcontent(this); return truefalseFunction(x);">Block Sites With Keywords Use Dns Cache</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Blog-Website-With-Keywords-Use-DNS-Static.html" onclick="getcontent(this); return truefalseFunction(x);">Block Website With Keywords Use DNS Static</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Bypass-Full-Speed-Local-Transfer-File.html" onclick="getcontent(this); return truefalseFunction(x);">Bypass Full Speed Locat Transfer File</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Mikrotik File .Backup</a></p></td></tr>	
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-to-Backup-Use-Export-rsc.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup-rsc-hide-sensitive.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc Hide-Sensitive</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup-rsc-compact.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc Compact</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup-rsc-terse.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc Terse</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup-rsc-verbose.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc Verbose</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-To-Backup-rsc-combination.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Export File .rsc With Combination</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-to-Backup-Use-import-rsc.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Import File .rsc</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Bypass-Local-Connection.html" onclick="getcontent(this); return truefalseFunction(x);">Bypass Local Connection / Local IP</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/bypass-user-hotspot-with-macaddress.html" onclick="getcontent(this); return truefalseFunction(x);">Bypass Hotspot User With Mac-Address</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Block-access-to-specific-websites.html" onclick="getcontent(this); return truefalseFunction(x);">Blocking Access To Specific Websites</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Bittorrent-layer-7.html" onclick="getcontent(this); return truefalseFunction(x);">Bittorrent, Torrentwws, Torrentwww Layer-7</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Block-Windows-Update.html" onclick="getcontent(this); return truefalseFunction(x);">Block Windows Update</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-youtube-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Youtube with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-whatsapp-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Whatsapp with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-facebook-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Facebook with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-istagram-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Instagram with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-twitter-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Twitter with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-telegram-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Telegram with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-signal-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Signal with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-bigo-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Bigo with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-netflix-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block Netflix with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-iflix-layer7-content-tls.html" onclick="getcontent(this); return truefalseFunction(x);">Block iflix with "Layer 7" or "Content" Or "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-tracert.html" onclick="getcontent(this); return truefalseFunction(x);">Block Tracert / Traceroute</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Block-Tiktok.html" onclick="getcontent(this); return truefalseFunction(x);">Block TikTok Firewall Rules "TLS"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-tiktok-content-firewall-rules.html" onclick="getcontent(this); return truefalseFunction(x);">Block TikTok Firewall Rules "Content"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-tiktok-layer7-firewall-rules.html" onclick="getcontent(this); return truefalseFunction(x);">Block TikTok Firewall Rules "Layer-7"</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Block-MAC-Address-Device.html" onclick="getcontent(this); return truefalseFunction(x);">Block MAC Address Device</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Blocking-Modem.html" onclick="getcontent(this); return truefalseFunction(x);">Blocking Modem Access</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Backup-graphing-data.html" onclick="getcontent(this); return truefalseFunction(x);">Backup Graphing Data</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Basic-universal-firewall-script.html" onclick="getcontent(this); return truefalseFunction(x);">Basic universal firewall script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-download-based-download-sizes.html" onclick="getcontent(this); return truefalseFunction(x);">Block Download Based Download Sizes</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/basic-traffic-priorities-rev-31.html" onclick="getcontent(this);return false;">Basic Traffic Priorities Rev 3.1</a></p></td></tr>
+<!-- C -->
+<tr><td><span id="C" style="margin-left:5px; font-weight:bold">C</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/how-to-change-mac-address.html" onclick="getcontent(this); return truefalseFunction(x);">Change MAC Address From Terminal</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-all-queue-type-in-queue-simple.html" onclick="getcontent(this); return truefalseFunction(x);">Change all Queue type in Queue Simple</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-all-queue-type-in-queue-tree.html" onclick="getcontent(this); return truefalseFunction(x);">Change all Queue type in Queue Tree</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Checking-for-the-update-New-Version.html" onclick="getcontent(this); return truefalseFunction(x);">Checking for the Update New Version</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Clear-Log-and-Session-User-Manager.html" onclick="getcontent(this); return truefalseFunction(x);">Clear Log and Session User Manager</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Custom-Limit-Bandwidth-Hotspot-With-Queue-Tree.html" onclick="getcontent(this); return truefalseFunction(x);">Custom Limit Bandwidth Hotspot With Queue Tree</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Custom-Limit-Bandwidth-Hotspot-With-Queue-Simple.html" onclick="getcontent(this); return truefalseFunction(x);">Custom Limit Bandwidth Hotspot With Queue Simple</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Complete-Bandwidth-Monitoring.html" onclick="getcontent(this); return truefalseFunction(x);">Complete Bandwidth Monitoring</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Create-Multiple-Queue-Tree-At-Once.html" onclick="getcontent(this); return truefalseFunction(x);">Create Multiple Queue Tree At Once</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Create-Multiple-Simple-Queue-At-Once.html" onclick="getcontent(this); return truefalseFunction(x);">Create Multiple Simple Queue At Once</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Create-Hotspot-Multi-Login-With-Bandwidth-Limit.html" onclick="getcontent(this); return truefalseFunction(x);">Create Hotspot Multi Login With Bandwidth Limit</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Check-if-RTO-and-send-to-Telegram.html" onclick="getcontent(this); return truefalseFunction(x);">Check if RTO and send to Telegram</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/address-list-dynamic-to-static.html" onclick="getcontent(this); return truefalseFunction(x);">Change All Address List Dynamic To Static</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-system-note.html" onclick="getcontent(this); return truefalseFunction(x);">Change System Note</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Speedtest-Mangle-layer7.html" onclick="getcontent(this); return truefalseFunction(x);">Complete Mangle Speedtest with Layer-7</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Get-Day.html" onclick="getcontent(this); return truefalseFunction(x);">Calculates Day Of The Week For a Givien Date</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-Interface-ether-Default-1.html" onclick="getcontent(this); return truefalseFunction(x);">Change Name Interface or Ether To Default Auto</a></p></td></tr>  
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-Interface-ether-Default-2.html" onclick="getcontent(this); return truefalseFunction(x);">Change Name Interface or Ether To Default Manual</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/check-ip-change.html" onclick="getcontent(this); return truefalseFunction(x);">Check if IP on interface have changed</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Check-bandwidth-and-add-limitations.html" onclick="getcontent(this); return truefalseFunction(x);">Check Bandwidth and Add Limitations</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Calculate-with-decimal-numbers.html" onclick="getcontent(this); return truefalseFunction(x);">Calculate With Decimal Numbers</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/clear-log-Mikrotik.html" onclick="getcontent(this); return truefalseFunction(x);">Clear LOG info from Terminal</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Create-a-file.html" onclick="getcontent(this); return truefalseFunction(x);">Create A File</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Calea-perl-trafr.html" onclick="getcontent(this); return truefalseFunction(x);">Calea Perl Trafr</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Converting_network_and_gateway_from_routing_table_to_hexadecimal_string.html" onclick="getcontent(this); return truefalseFunction(x);">Converting Gateway From Routing To hexadecimal</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Change-Mikrotik-identity-or-Winbox-Caption.html" onclick="getcontent(this); return truefalseFunction(x);">Change Mikrotik identity or Winbox Caption</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Change-All-Queue-Type-in-Interface-Queue.html" onclick="getcontent(this); return truefalseFunction(x);">Change All Queue Type in Interface Queue</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/check-routeros-update-and-notification.html" onclick="getcontent(this); return truefalseFunction(x);">Check RouterOS Update and Notification to eMail or Telegram</a></p></td></tr>
+<!-- D -->
+<tr><td><span id="D" style="margin-left:5px; font-weight:bold">D</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/detect-ip-address-on-vpn-tunnel-if-has-been-changed.html" onclick="getcontent(this); return truefalseFunction(x);">Detect IP Address on VPN Tunnel if has been changed</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/block-ads-use-dns-static.html" onclick="getcontent(this); return truefalseFunction(x);">DNS Static adblock For Block Ads</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Dynamic-DNS-on-private-DNS-server.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS on Private DNS Server</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-changeip.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for ChangeIP.com</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-changeip-behind-nat.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for ChangeIP behind NAT</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-dnsomatic.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for DNSoMatic.com</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-dnsomatic-behind-nat.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for DNSoMatic.com behind NAT</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-dyndns.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for dynDNS</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-dyndns-behind-nat.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for dynDNS behind NAT</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-everydns.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for EveryDNS</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-hurricane-electric-dns.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for Hurricane Electric DNS</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-namecheap.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for Namecheap</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dynamic-dns-update-script-for-no-ip-dns.html" onclick="getcontent(this); return truefalseFunction(x);">Dynamic DNS Update Script for No-IP DNS</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Delete-Arp-Trafic-For-Arp-Table.html" onclick="getcontent(this); return truefalseFunction(x);">Delete Arp Trafic For Arp Table</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Default-Filter-Rules.html" onclick="getcontent(this); return truefalseFunction(x);">Default Filter Rules</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/DNSCRYPT-with-OpenDNS.html" onclick="getcontent(this); return truefalseFunction(x);">DNSCRYPT with OpenDNS port 443 or 5353</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/dns-chace-flush.html" onclick="getcontent(this); return truefalseFunction(x);">DNS Cache Flush</a></p></td></tr>  
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Detect-new-log-entry.html" onclick="getcontent(this); return truefalseFunction(x);">Detect New Log Entry</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Dial_PPPoE_until_a_Certain_IP_Range_is_Obtained.html" onclick="getcontent(this); return truefalseFunction(x);">Dial PPPoE until a Certain IP Range is Obtained</a></p></td></tr>
+<tr><td><p><a href="https://irfannjt.github.io/script/mikrotik/discover-unknown-dhcp-server-on-the-network.html">Discover Unknown DHCP Server On The Network (Telegram)</a></p></td></tr>
+<!-- E -->
+<tr><td><span id="E" style="margin-left:5px; font-weight:bold">E</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Extract-the-day-of-the-month.html" onclick="getcontent(this); return truefalseFunction(x);">Extract The Day Of The Month</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Automatic-Expired-Hotspot-Page-Without-A-Proxy.html" onclick="getcontent(this); return truefalseFunction(x);">Expired Hotspot Page Without A Proxy</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Enable-Disable-New-Guest-User-Account-Daily-Hotspot.html" onclick="getcontent(this); return truefalseFunction(x);">Enable or Disable New Guest User Account Daily Hotspot</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/expire-users-a-after-number-of-days.html" onclick="getcontent(this); return truefalseFunction(x);">Expire Users Hotspot A After Number Of Days</a></p></td></tr>
+<!-- F -->
+<tr><td><span id="F" style="margin-left:5px; font-weight:bold">F</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/enable-fasttrack.html" onclick="getcontent(this); return truefalseFunction(x);">Fasttrack Enable</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/filter-a-command-output.html" onclick="getcontent(this); return truefalseFunction(x);">Filter A Command Output</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/script-to-find-the-day-of-the-week.html" onclick="getcontent(this); return truefalseFunction(x);">Find The Day Of The Week</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/show-usermanager-password.html" onclick="getcontent(this); return truefalseFunction(x);">Forget or Show User Manager Password</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Failover-with-Netwatch.html" onclick="getcontent(this); return truefalseFunction(x);">Failover with Netwatch</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Failover-with-Scripting.html" onclick="getcontent(this); return truefalseFunction(x);">Failover With Scripting</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Force-Disconnect-Wireless-Stations-with-Low-CCQ.html" onclick="getcontent(this); return truefalseFunction(x);">Force Disconnect Wireless Stations with Low CCQ</a></p></td></tr>
+<!-- G -->
+<tr><td><span id="G" style="margin-left:5px; font-weight:bold">G</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/gps-text-file-converter-to-google-earth-or-maps.html" onclick="getcontent(this); return truefalseFunction(x);">GPS Text File Converter To Google Earth Or Maps</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/google-domain-list-or-all-google-host.html" onclick="getcontent(this); return truefalseFunction(x);">Google Domain List Or All Google Host</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/get-active-vpn-connections-via-e-mail.html" onclick="getcontent(this); return truefalseFunction(x);">Get Active Vpn Connections Via E-Mail</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Google-Safe-Search-use-DNS-Static.html" onclick="getcontent(this); return truefalseFunction(x);">Google Safe Search use DNS Static</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/How-to-get-todays-date-info.html" onclick="getcontent(this); return truefalseFunction(x);">Get Today's Date Info</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Generate-backup-and-sendit-by-email.html" onclick="getcontent(this); return truefalseFunction(x);">Generate Backup And Send it By E-Mail</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/get-ip-address-list-netflix-with-raw.html" onclick="getcontent(this); return truefalseFunction(x);">Get IP Address List Netflix With RAW</a></p></td></tr>	
+<!-- H -->
+<tr><td><span id="H" style="margin-left:5px; font-weight:bold">H</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/how-to-disable-google-ssl-using-static-dns.html" onclick="getcontent(this); return truefalseFunction(x);">How To Disable Google Ssl Using Static Dns</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Speedtest-domain-List.html" onclick="getcontent(this); return truefalseFunction(x);">Host or Domain list SpeedTest</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Hotspot-Auto-User-logout-user-When-internet-down.html" onclick="getcontent(this); return truefalseFunction(x);">Hotspot Auto logout user When Inet down</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/change-path-database-user-manager-to-disk-or-usb.html" onclick="getcontent(this); return truefalseFunction(x);">How To Change Path DataBase User Manager to Disk or USB</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/hurricane-electric-ipv6-tunnel-ipv4-endpoint-updater.html" onclick="getcontent(this); return truefalseFunction(x);">Hurricane Electric IPv6 Tunnel - IPv4 Endpoint updater</a></p></td></tr> 
+<!-- I -->
+<tr><td><span id="I" style="margin-left:5px; font-weight:bold">I</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Pool-Statistics.html" onclick="getcontent(this); return truefalseFunction(x);">IP Pool Statistics</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-netflix.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List for Netflix</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-tiktok.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List for Tiktok</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-GGC.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List for GGC Google Global Cache</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-ix-nice-rsc.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List Nice.rsc IIX or IXP</a></p></td></tr>	
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-List-AWS-EC2-Amazon.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List AWS EC2 Amazon</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-Speedtest.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address list SpeedTest</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-Telergram.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address list Telegram</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-Facebook.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address list Facebook</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-List-twitter.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address list Twitter</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-List-WhatsApp.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address list WhatsApp</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Address-list-zoom-meeting.html" onclick="getcontent(this); return truefalseFunction(x);">IP Address List Zoom Meeting</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/IP-Private-or-IP-Local-Standard-RFC1918.html" onclick="getcontent(this); return truefalseFunction(x);">IP Private or IP Local Standard RFC 1918</a></p></td></tr>	
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Include-custom-function-in-another-script.html" onclick="getcontent(this); return truefalseFunction(x);">Include custom function in another script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/initiating-the-update-process-new-version.html" onclick="getcontent(this); return truefalseFunction(x);">Initiating The Update Process New Version</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Improved-Netwatch.html" onclick="getcontent(this); return truefalseFunction(x);">Improved Netwatch</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Improved-Netwatch-2.html" onclick="getcontent(this); return truefalseFunction(x);">Improved Netwatch 2</a></p></td></tr>
+<!-- J -->
+<tr><td><span id="J" style="margin-left:5px; font-weight:bold">J</span></td></tr>
+<!-- K -->
+<tr><td><span id="K" style="margin-left:5px; font-weight:bold">K</span></td></tr>
+<!-- L -->
+<tr><td><span id="L" style="margin-left:5px; font-weight:bold">L</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Layer-7-For-All-Streaming-Video.html" onclick="getcontent(this); return truefalseFunction(x);">Layer-7 Regex For All Streaming Video</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Layer-7-For-All-Social-Media-Socmed.html" onclick="getcontent(this); return truefalseFunction(x);">Layer-7 Regex For All Social Media (Socmed)</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Layer-7-For-All-Media-Extention.html" onclick="getcontent(this); return truefalseFunction(x);">Layer-7 Regex For All Media Extention</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Layer-7-For-All-File-Extention.html" onclick="getcontent(this); return truefalseFunction(x);">Layer-7 Regex For All File Extention</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Layer-7-Regex-For-Telkom-Ads.html" onclick="getcontent(this); return truefalseFunction(x);">Layer-7 Regex For Telkom Ads</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Limit-sharing-Hotspot-with-Change-TTL.html" onclick="getcontent(this); return truefalseFunction(x);">Limit sharing Hotspot with 'Change TTL'</a></p></td></tr>  
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-PCC-2-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB PCC 2 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-PCC-3-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB PCC 3 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-PCC-4-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB PCC 4 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-PCC-5-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB PCC 5 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-PCC-6-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB PCC 6 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-2-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP 2 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-3-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP 3 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-4-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP 4 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-5-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP 5 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-6-Line-ISP.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP 6 Line ISP Failover</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LB-ECMP-Failover-Script.html" onclick="getcontent(this); return truefalseFunction(x);">LB ECMP Failover Script</a></p></td></tr>	
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Log-Parser-Event-Trigger-Script.html" onclick="getcontent(this); return truefalseFunction(x);">Log Parser - Event Trigger Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/limiting-a-user-to-a-given-amount-of-traffic-using-queues.html" onclick="getcontent(this); return truefalseFunction(x);">Limiting A User To A Given Amount Of Traffic Using Queues</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Limiting-a-User-To-a-Given-Amount-Of-Traffic-With-User-Levels.html" onclick="getcontent(this); return truefalseFunction(x);">Limiting a User To a Given Amount Of Traffic With User Levels</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Limit-Different-Bandwidth-In-Day-and-Night.html" onclick="getcontent(this); return truefalseFunction(x);">Limit Different Bandwidth In Day and Night</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/LED-Antenna-Alignment.html" onclick="getcontent(this); return truefalseFunction(x);">LED Antenna Alignment</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/logging-average-ccq-and-wireless-clients-stats.html" onclick="getcontent(this); return truefalseFunction(x);">Logging Average CCQ and Wireless Clients Stats</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/logging-snr-and-thruput-values.html" onclick="getcontent(this); return truefalseFunction(x);">Logging SNR and Thruput Values</a></p></td></tr>
+<!-- M -->
+<tr><td><span id="M" style="margin-left:5px; font-weight:bold">M</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Monitoring-Script.html" onclick="getcontent(this); return truefalseFunction(x);">Monitoring Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-UltraViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port UltraViewer (Remote Dekstop)</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-TeamViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port TeamViewer (Remote Dekstop)</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-AnyDesk.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port AnyDesk (Remote Dekstop)</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-RDC.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port Remote Desktop Connection (RDC)</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-chrome-remote-desktop.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port Google Chrome Remote Desktop</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-employeespro.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port Net Monitoring for employees pro</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mangle-and-Port-VNC.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port VNC (Virtual Network Computing</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/make-sure-all-clients-use-router-dns.html" onclick="getcontent(this); return truefalseFunction(x);">Make Sure All Clients Use Router Dns</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Make-an-Automated-Configuration-and-Uninstall.html" onclick="getcontent(this); return truefalseFunction(x);">Make an Automated Configuration and Uninstall</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Monitor-Logs-Send-Email-Alert-Or-Run-Script.html" onclick="getcontent(this); return truefalseFunction(x);">Monitor Logs, Send Email Alert Or Run Script</a></p></td></tr>
+<!-- N -->
+<tr><td><span id="N" style="margin-left:5px; font-weight:bold">N</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/No-Mark-Without-Mangle-in-Queue-Tree.html" onclick="getcontent(this); return truefalseFunction(x);">No-Mark Without Mangle in Queue Tree</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/notification-when-public-ip-address-router-changes-to-email-or-telegram.html" onclick="getcontent(this); return truefalseFunction(x);">Notification When Public IP Address Router Changes</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/notification-of-device-connection-to-the-network.html" onclick="getcontent(this); return truefalseFunction(x);">Notification Of Device Connection To The Network</a></p></td></tr> 
+<!-- 0 -->
+<tr><td><span id="O" style="margin-left:5px; font-weight:bold">O</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/only-1-hotspot-id-can-login-together.html" onclick="getcontent(this); return truefalseFunction(x);">Only 1 Hotspot Id Can Login Together</a></p></td></tr> 
+<!-- P -->
+<tr><td><span id="P" style="margin-left:5px; font-weight:bold">P</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/PPPoE-Secret-Random-Username-and-Password.html" onclick="getcontent(this); return truefalseFunction(x);">PPPoE Secret Random Username and Password</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Port-Forward-for-All-Remote-Desktop.html" onclick="getcontent(this); return truefalseFunction(x);">Port Forward for All Remote Desktop</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/password-ont-modem-telkom-indihome.html" onclick="getcontent(this); return truefalseFunction(x);">Password and username ONT Modem Telkom Indihome</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Protect-Modem-And-Webfig-Pages-Using-Internal-Proxy.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Modem And Webfig Pages Using Internal Proxy</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Pseudo-Random-Number-Generator.html" onclick="getcontent(this); return truefalseFunction(x);">Pseudo Random Number Generator</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Ping-ICMP-To-Routing-ISP-Games.html" onclick="getcontent(this); return truefalseFunction(x);">Ping ICMP To Routing ISP Games</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/port-game-online-pc-games.html" onclick="getcontent(this); return truefalseFunction(x);">Port Game Online for PC Games</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/port-game-online-mobile-games.html" onclick="getcontent(this); return truefalseFunction(x);">Port Game Online for Mobile Games</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/port-game-online-web-games.html" onclick="getcontent(this); return truefalseFunction(x);">Port Game Online for Web Games</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Protect-Router-from-Port-Scanner.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Router from Port Scanner</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/protect-connection-with-anti-netcut.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Connection With ANTI NETCUT</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Protect-web-open-porxy.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Open Web proxy</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Protect-Open-Recursive-DNS.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Open Recursive DNS</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/protect-default-service-port.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Default Port Service From WAN</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/protect-mikrotik-from-ddos.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Router From DDOS Attacks</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/protect-mikrotik-from-exploit.html" onclick="getcontent(this); return truefalseFunction(x);">Protect Router From Exploit (VULNERABILITY)</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/port-knocking-icmp.html" onclick="getcontent(this); return truefalseFunction(x);">Port Knocking Maker or Generator Icmp + Packet Size</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Parse-file-to-add-ppp-secrets.html" onclick="getcontent(this); return truefalseFunction(x);">Parse File To Add PPP Secrets</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Print-function.html" onclick="getcontent(this); return truefalseFunction(x);">Print Function</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Parent-Simple-Queue-Always-On-Top.html" onclick="getcontent(this); return truefalseFunction(x);">Parent Simple Queue Always On Top</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/paypal-with-hotspot-and-walled-garden-bypass.html" onclick="getcontent(this); return truefalseFunction(x);">Paypal With Hotspot And Walled Garden Bypass</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/PPP-Keepalive-ping.html" onclick="getcontent(this); return truefalseFunction(x);">PPP Keepalive Ping</a></p></td></tr>
+<!-- Q -->
+<tr><td><span id="Q" style="margin-left:5px; font-weight:bold">Q</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Remove-Default-Configuration.html" onclick="getcontent(this); return truefalseFunction(x);">Quick Set Remove Config to Default Configuration</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Queue-Tree-And-E-Mailing-Stats.html" onclick="getcontent(this); return truefalseFunction(x);">Queue Tree And E-Mailing Stats</a></p></td></tr>
+<!-- R -->
+<tr><td><span id="R" style="margin-left:5px; font-weight:bold">R</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/restore-mac-address-to-default-interface.html" onclick="getcontent(this); return truefalseFunction(x);">Restore MAC-Address to Default Interface</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Remove-Default-Simple-Queue-from-Hotspot.html" onclick="getcontent(this); return truefalseFunction(x);">Remove Default Simple Queue From Hotspot</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Routing-FailOver-with-2-ISP-gateway.html" onclick="getcontent(this); return truefalseFunction(x);">Routing FailOver with 2 ISP (gateway)</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Routing-FailOver-with-3-ISP-gateway.html" onclick="getcontent(this); return truefalseFunction(x);">Routing FailOver with 3 ISP (gateway)</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Reset-Mikrotik-via-Script-from-Terminal.html" onclick="getcontent(this); return truefalseFunction(x);">Reset Mikrotik via Script from Terminal</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Remove-Files-On-Mikrotik.html" onclick="getcontent(this); return truefalseFunction(x);">Remove or Delete Files On Mikrotik</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/remote-ip-public-static.html" onclick="getcontent(this); return truefalseFunction(x);">Remote IP Public Static For Secondary Gateway</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Read-and-write-large-files.html" onclick="getcontent(this); return truefalseFunction(x);">Read and Write Large Files</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Resolve-host-name.html" onclick="getcontent(this); return truefalseFunction(x);">Resolve host-name</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/reset-counter.html" onclick="getcontent(this); return truefalseFunction(x);">Reset All Counter</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/fail-over-recursive-gateway.html" onclick="getcontent(this); return truefalseFunction(x);">Recursive Gateway Fail over</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/rebuild-database-User-Manager.html" onclick="getcontent(this); return truefalseFunction(x);">Rebuild DataBase On User Manager</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Reset-DataBase-User-Manager-to-default.html" onclick="getcontent(this); return truefalseFunction(x);">Reset DataBase User Manager</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Routing-Via-A-Dhcp-Allocated-Gateway.html" onclick="getcontent(this); return truefalseFunction(x);">Routing Via A Dhcp Allocated Gateway</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Reboot-mikrotik-from-terminal.html" onclick="getcontent(this); return truefalseFunction(x);">Reboot or Restart Mikrotik From Terminal</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/remove-firewall-address-lists.html" onclick="getcontent(this); return truefalseFunction(x);">Remove Firewall IP Address Lists From Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Removing-Busy-Leases-From-Dhcp-Pool.html" onclick="getcontent(this); return truefalseFunction(x);">Removing Busy Leases From Dhcp Pool</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Reboot-Boards-due-to-low-Memory-with-notification.html" onclick="getcontent(this); return truefalseFunction(x);">Reboot Boards due to low Memory with notification</a></p></td></tr>
+<!-- S -->
+<tr><td><span id="S" style="margin-left:5px; font-weight:bold">S</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/sending-your-self-an-e-mail-with-dsl-interface-ip-address.html" onclick="getcontent(this); return truefalseFunction(x);">Sending Your Self An E-Mail With Dsl Interface Ip Address</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/sending-text-out-over-a-serial-port.html" onclick="getcontent(this); return truefalseFunction(x);">Sending Text Out Over A Serial Port</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Script-to-Create-Directory.html" onclick="getcontent(this); return truefalseFunction(x);">Script to Create Directory</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Scheduled-Check-For-Loaded-Interfaces.html" onclick="getcontent(this); return truefalseFunction(x);">Scheduled Check For Loaded Interfaces</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Scheduled-WAN-Disconnect.html" onclick="getcontent(this); return truefalseFunction(x);">Scheduled WAN Disconnect</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/setup-and-troubleshooting-routeros-email-function.html" onclick="getcontent(this); return truefalseFunction(x);">Setup And Troubleshooting Routeros Email Function</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/super-mario-bross-theme-sound-beep.html" onclick="getcontent(this); return truefalseFunction(x);">Super Mario Bross Theme Sound Beep</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Setting-NTP-Network-Time-Protocol.html" onclick="getcontent(this); return truefalseFunction(x);">SNTP Client or NTP Network Time Protocol</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Solution-Hotspot-login-Page-LB-PCC.html" onclick="getcontent(this); return truefalseFunction(x);">Solution For Hotspot Login Page with LB PCC</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Signalorg-Mangle-And-Queue.html" onclick="getcontent(this); return truefalseFunction(x);">Signal.org Mangle And Queue</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Speedtest-Regexp-Layer7.html" onclick="getcontent(this); return truefalseFunction(x);">Speedtest Regexp Layer-7</a></p></td></tr> 
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/strip-ip-address-netmask.html" onclick="getcontent(this); return truefalseFunction(x);">Strip IP Address without netmask</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/A-script-to-set-up-WAN-or-LAN-or-WLAN-to-get-you-started.html" onclick="getcontent(this); return truefalseFunction(x);">Set Up WAN/LAN/WLAN To Get You Started</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Setting-Static-DNS-Record-For-Each-DHCP-Lease.html" onclick="getcontent(this); return truefalseFunction(x);">Setting Static DNS Record For Each DHCP Lease</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Send-Email-About-Reboot.html" onclick="getcontent(this); return truefalseFunction(x);">Send Email About Reboot</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Securing-L2TP-Server-for-IPSec.html" onclick="getcontent(this); return truefalseFunction(x);">Securing L2TP Server for IPSec</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/sync-address-list-from-dns-lookup-results.html" onclick="getcontent(this); return truefalseFunction(x);">Sync Address List from DNS Lookup Results</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/SXT-5HnD-Alignment-Script.html" onclick="getcontent(this); return truefalseFunction(x);">SXT 5HnD Alignment Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Sync-Address-List-with-DNS-Cache.html" onclick="getcontent(this); return truefalseFunction(x);">Sync Address List with DNS Cache</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Sending-Mails-When-Battery-Low.html" onclick="getcontent(this); return truefalseFunction(x);">Sending Mails When Battery Low (UPS Script)</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/sending-power-on-notification-to-telegram.html" onclick="getcontent(this); return truefalseFunction(x);">Sending Power On Notification To Telegram</a></p></td></tr>
+<!-- T -->
+<tr><td><span id="T" style="margin-left:5px; font-weight:bold">T</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Mikrotik-Terminal-Command-Line-and-Keyboard-Command.html" onclick="getcontent(this); return truefalseFunction(x);">Terminal Command Line and Keyboard Command</a></p></td></tr> 
+<!-- U -->
+<tr><td><span id="U" style="margin-left:5px; font-weight:bold">U</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Updating-The-Firmware-From-Terminal.html" onclick="getcontent(this); return truefalseFunction(x);">Updating The Firmware From Terminal</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/use-mikrotik-as-fail2ban-firewall.html" onclick="getcontent(this); return truefalseFunction(x);">Use Mikrotik as Fail2ban firewall</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Use-string-as-function.html" onclick="getcontent(this); return truefalseFunction(x);">Use String as Function</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/update-static-dns-entries-every-10-minutes.html" onclick="getcontent(this); return truefalseFunction(x);">Update Static DNS Entries Every 10 Minutes</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/UPnP-Multi-WAN.html" onclick="getcontent(this); return truefalseFunction(x);">UPnP Multi-WAN</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Use-Functions-in-CMD-Script.html" onclick="getcontent(this); return truefalseFunction(x);">Use Functions in CMD Script</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Use-Host-Names-In-Firewall-Rules.html" onclick="getcontent(this); return truefalseFunction(x);">Use Host Names In Firewall Rules</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Using-scripting-to-overcome-the-inability-to-specify-number-ranges-on-the-command-line.html" onclick="getcontent(this); return truefalseFunction(x);">Using Scripting To Overcome The Inability To Specify Number Ranges On The Command Line</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Using-Fetch-and-Scripting-to-add-IP-Address-Lists.html" onclick="getcontent(this); return truefalseFunction(x);">Using Fetch and Scripting to add IP Address Lists</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/upnp-redirect-the-port-to-mikrotik-device.html" onclick="getcontent(this); return truefalseFunction(x);">UPnP: Redirect The Port To Mikrotik Device</a></p></td></tr>
+<!-- V -->
+<tr><td><span id="V" style="margin-left:5px; font-weight:bold">V</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Virus-and-Malware-Port-Blocking.html" onclick="getcontent(this); return truefalseFunction(x);">Virus and Malware Port Blocking</a></p></td></tr>
+<!-- W -->
+<tr><td><span id="W" style="margin-left:5px; font-weight:bold">W</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/wms-auto-login.html" onclick="getcontent(this); return truefalseFunction(x);">WMS or Wifi.id Auto Login</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Write-simple-queue-stats-in-multiple-files.html" onclick="getcontent(this); return truefalseFunction(x);">Write simple queue stats in multiple files</a></p></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/wake-on-lan-before-connection-to-remote-desktop.html" onclick="getcontent(this); return truefalseFunction(x);">Wake On Lan Before Connection To Remote Desktop</a></p></td></tr>
+<!-- X -->
+<tr><td><span id="X" style="margin-left:5px; font-weight:bold">X</span></td></tr>
+<!-- Y -->
+<tr><td><span id="Y" style="margin-left:5px; font-weight:bold">Y</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Youtube-Restricted-Mode-use-DNS-Static.html" onclick="getcontent(this); return truefalseFunction(x);">Youtube Restricted Mode use DNS Static</a></p></td></tr>
+<!-- Z -->
+<tr><td><span id="Z" style="margin-left:5px; font-weight:bold">Z</span></td></tr>
+<tr><td><p><a class="linkPress" href="https://irfannjt.github.io/script/mikrotik/Complete-zoom-mangle-and-queue-.html" onclick="getcontent(this); return truefalseFunction(x);">Zoom Meeting Mangle and Queue</a></p></td></tr>
+<!-- WELCOME -->
+<tr><td><p><a class="linkPress active1" href="https://irfannjt.github.io/script/mikrotik/welcome.html" onclick="getcontent(this); return truefalseFunction(x);">Welcome</a></p></td></tr>
+</table>
+</div>
+<div class='backtotop'><a href='#top'>Back to Top</a></div>
+</div>
+<div class="content">
+<div class="list-mangle">
+<div id="reloadads1" style="width:100%; height:90px; margin-top:10px; margin-left:5px; margin-bottom:10px">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MIKROTIK SCRIPT DB3 -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-3815059393374366"
-     data-ad-slot="3896250138"></ins>
+style="display:inline-block;width:728px;height:90px"
+data-ad-client="ca-pub-3815059393374366"
+data-ad-slot="4637807296"></ins>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5TL99Q9M2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M5TL99Q9M2');
-</script>
-<span style="line-height:0;float:left; display:inline;margin-right:6px; margin-top:25px">
-<img src="https://irfannjt.github.io/script/mikrotik/img/logo.png" alt="HOME">
-</span>	 
-<h2>FREE MIKROTIK ROUTEROS TOOLS</h2>
-<h3>MIKROTIK <span style="color:red">[</span> SCRIPT <span style="color:red">]</span> ROUTEROS DATABASE</h3>
-<p><a target="_blank"  href="https://irfannjt.github.io/script/mikrotik">Complete Mikrotik RouterOS Script Database</a> - Enjoy the most complete script to make it easier for you to learn Mikrotik RouterOS scripts!</p>
-
-<h3>MIKROTIK SCRIPT GENERATOR </h3>
-<p><a target="_blank"  href="/script/mikrotik-expired-isolate-pppoe-hotspot.html">Mikrotik Notification Expired For Hotspot, PPPoE And Static IP</a> - Mikrotik All-In-One Notification Isolated and Expired For Hotspot, PPPoE And Static IP For RouterOS</p>
-<p><a target="_blank"  href="/script/mikrotik-burst-limit-calculator.html">MikroTik Burst Limit Calculator</a> - Simple MikroTik Burst Limit Calculator For RouterOS</p>
-<p><a target="_blank"  href="/script/mikrotik-pcq-burst-rate-queue-size-generator.html">MikroTik PCQ Burst Rate + Queue Size Calculator</a> - MikroTik PCQ Burst Rate + Queue Size Calculator For RouterOS</p>
-<p><a target="_blank"  href="/script/vpn-game-generator.html">VPN Routing Port Game Script Generator</a> - Static Routing Vpn Game Script Generator or Script Maker (Port Game Routing Method) </p>
-<p><a target="_blank"  href="/script/vpn-game-generator2.html">VPN Routing IP Address Games Script Generator</a> - Static Routing Vpn Game Script Generator or Script Maker (Ip Address Game Routing Method)</p>
-<p><a target="_blank"  href="/script/ecmp.html">Load Balancing ECMP Script Generator</a> - Load Balancing ECMP (Equal Cost Multi Path) Script Generator or Script Maker For Mikrotik Routeros</p>
-<p><a target="_blank"  href="/script/pcc.html">Load Balancing PCC Script Generator</a> - LB PCC / Load Balancing PCC Script Generator or Script Maker For Mikrotik Routeros</p>
-<p><a target="_blank"  href="/script/nth.html">Load Balancing NTH Script Generator</a> - LB NTH / Load Balancing NTH Script Generator or Script Maker For Mikrotik Routeros</p>  
-<p><a target="_blank"  href="/script/simple-queue-generator.html">Simple Queue Script Generator For Mikrotik + Tocken Bucket</a> - Simple Queue Script Generator or Script Maker For Mikrotik Plus Token Bucket - For IP Subnet /24 Only</p>
-<p><a target="_blank"  href="/script/simple-queue-generator-shared.html">Simple Queue Script Generator For Mikrotik + Bandwidth Shared (UpTo)</a> - Simple Queue Script Generator Mikrotik + Bandwidth Shared (Upto) - For IP Subnet /24 Only</p>
-<p><a target="_blank"  href="/script/queue-tree-generator-shared.html">Queue Tree Script Generator For Mikrotik + Bandwidth Shared (UpTo)</a> - Queue Tree Script Generator Mikrotik + Bandwidth Shared (Upto) - For IP Subnet /24 Only</p>
-<p><a target="_blank"  href="/script/remote-ip-public-static.html">Remote IP Public Static For Secondary Gateway Mikrotik</a> - Simple Script how Remote IP Public Static For Secondary Gateway Mikrotik</p>
-<p><a target="_blank"  href="/port-knocking-icmp.html">Port Knocking Generator with (ping) ICMP + Packet Size</a> - Mikrotik Port Knocking Generator or Knocking Script Maker With Icmp + Packet Size</p>
-<p><a target="_blank"  href="/script/pcc-calculation.html">LB PCC Calculation / Load Balancing PCC Calculation</a> - Simple LB PCC (Load Balancing Per Connection Classifier) Calculator</p>
-<p><a target="_blank"  href="/script/mikrotik-pcq-generator.html">PCQ Generator For Queue Tree And Queue Simple</a> - Mikrotik PCQ Generator For Queue Tree And Queue Simple, very easy</p>
-<p><a target="_blank"  href="/script/vpn-tunnel-all-traffic-script-generator.html">VPN Tunnel All Traffic Script Generator</a> - VPN Tunnel All Traffic Script Generator For Mikrotik RouterOS</p>
-<p><a target="_blank"  href="/script/wifid-wms-seamless.html">Wifi.id WMS and Seamless Auto Login Script Generator</a> - Wifi.id WMS and Seamless Auto Login Script Generator For Mikrotik RouterOS</p>
-
-<h3>MIKROTIK TOOLS BY MIKROTIK.COM</h3>
-<p><a target="_blank"  href="https://mt.lv/winbox64">Winbox-64 (64bit)</a> - Winbox 64 bit is a small utility that allows administration of MikroTik RouterOS using a fast and simple GUI t is a native Win64 binary</p>
-<p><a target="_blank"  href="https://mt.lv/winbox">Winbox-32 (32bit)</a> - Winbox 32 bit is a small utility that allows administration of MikroTik RouterOS using a fast and simple GUI t is a native Win32 binary</p>
-<p><a target="_blank"  href="https://mikrotik.com/download">The Dude</a> - The Dude network monitor is a new application by MikroTik which can dramatically improve the way you manage your network environment</p>
-<p><a target="_blank"  href="https://mikrotik.com/download">Netinstall</a> - Netinstall is a tool designed for Windows operating systems to reinstall MikroTik devices running RouterOS (except for non-MikroTik x86 devices)</p>
-<p><a target="_blank"  href="https://mt.lv/btest">Bandwidth Test</a> - The Bandwidth Tester can be used to measure the throughput to another MikroTik router (either wired or wireless) and thereby help to discover network "bottlenecks".</p>
-<p><a target="_blank"  href="https://i.mt.lv/files/exe/MT_Syslog.exe">MT Syslog Daemon</a> - MT Syslog Daemon Is a server log system, to receive log messages from the router</p>
-<p><a target="_blank"  href="https://mikrotik.com/download/TrafficCounter.zip">MT Traffic Counter</a> - This traffic monitor can be used to monitor traffic running on an interface on a router.</p>
-
-<h3>MIKROTIK MOBILE TOOLS BY MIKROTIK.COM</h3>
-<p><a target="_blank"  href="https://apps.apple.com/id/app/mikrotik/id1323064830?l=id">Mikrotik Winbox iPhone</a> - Use the MikroTik smartphone app on iPhone or IOS to configure your router in the field, or to apply the most basic initial settings for your MikroTik home access point.</p>
-<p><a target="_blank"  href="https://play.google.com/store/apps/details?id=com.mikrotik.android.tikapp&hl=in">Mikrotik Winbox Android</a> - Use the MikroTik smartphone app on Android to configure your router in the field, or to apply the most basic initial settings for your MikroTik home access point.</p>
-
-<h3>MIKROTIK ROUTEROS SOFTWARE DOWNLOAD BY MIKROTIK.COM</h3>
-<p><a target="_blank"  href="https://mikrotik.com/download">Mikrotik.com/download</a> - If you are already running RouterOS, upgrading to the latest version can be done by clicking on "Check For Updates" in QuickSet or System > Packages menu in WebFig or WinBox. </p>
-<p><a target="_blank"  href="http://www.routeros.co.id">Routeros.co.id</a> - Free Download Mikrotik RouterOS all Version</p>
-
-<h3>MIKROTIK WIRELESS TOOLS BY MIKROTIK</h3>
-<p><a target="_blank"  href="http://www.mikrotik.co.id/test_tower.php">Antenna Height Calculation</a> - This application can be used to calculate the recommended antenna height, taking into account the frequency used</p>
-<p><a target="_blank"  href="https://shop.duxtel.com.au/article_info.php?articles_id=53">MikroTik Link Planner</a> - MikroTik Link Planner To calculate what maximum link speed you can achieve using specific equipment</p>
-<p><a target="_blank"  href="http://www.mikrotik.co.id/getfile.php?nf=wireless_abg.zip">Wireless MiniPCI A/B/G</a> - Mikrotik Driver Wireless MiniPCI A/B/G For windows.</p>
-<p><a target="_blank"  href="https://mikrotik.com/calculator">Wireless link calculator (need login)</a> - a tool for calculating the link (link posibility) of wireless connections from MikroTik devices</p>
-<p><a target="_blank"  href="https://mikrotik.com/client/distributorLockpack">Lockpack creator (need login)</a> - Create frequency and other locks package</p>
-
-<h3>MIKROTIK OTHER TOOLS LIKE CALCULATOR AND MONITOR</h3>
-<p><a target="_blank"  href="https://www.mikrotik.id/artikel_lihat.php?id=215">Traffic Monitor with Cacti linux</a> - Cacti is an open source, web-based network monitoring application and is a complete network graphic creation solution designed to take advantage of the capabilities of RRDTool functions as data storage and graphics creation.</p>
-<p><a target="_blank"  href="http://www.routerboard.co.id/">RouterBoard Comparison Table</a> - Simple Tool For Comparison Mikrotik Routerboard</p>
-<p><a target="_blank"  href="http://www.mikrotik.co.id/test_proxy.php">RAM Proxy Mikrotik Calculator</a> - Calculation of Mikrotik Proxy RAM Requirements</p>
-<p><a target="_blank"  href="https://wispcasts.com/tools/burst-calculator">MikroTik Burst Calculator</a> - Burst is a feature in MikroTik RouterOS that can allow users to exceed Max-Limit for a limited period of time.</p>
-<p><a target="_blank"  href="http://www.mikrotik.co.id/getfile.php?nf=neighbour.zip">Neighbour Viewer dan Mac Telnet</a> - To see the Mikrotik that is directly connected to your computer, and telnet based on a mac address (no need for an ip address)</p>
-<p><a target="_blank"  href="http://www.mikrotik.co.id/getfile.php?nf=trafr.tgz">Trafr Sniffer linux</a> - Traffic Sniffer stream reader for Linux</p> 
-<p><a target="_blank"  href="https://forum.mikrotik.com/viewtopic.php?t=77193">ATTIX5 Traffic Monitor</a> - Attix5 - Traffice Real-Time Monitor Analysis Mikrotik</p>
-
-<h3>MIKROTIK BILLING HOTSPOT / RADIUS / USERMANAGER CUSTOM TOOLS</h3>
-<p><a target="_blank"  href="https://freeradius.org">FREERADIUS</a> - FreeRADIUS is a modular, high performance free RADIUS suite developed and distributed under the GNU General Public License, version 2, and is free for download and use. The FreeRADIUS Suite includes a RADIUS server, a BSD-licensed RADIUS client library, a PAM library, an Apache module, and numerous additional RADIUS related utilities and development libraries.</p>
-<p><a target="_blank"  href="http://dmasoftlab.com">DMA Radius Manager</a> - DMA Radius Manager is a easy to use administration system for Mikrotik, Cisco, StarOS, Chillispot,DD-WRT, pfSense NAS devices and DOCSIS CMTS. It provides centralized authentication, accounting and billing functions.</p>
-<p><a target="_blank"  href="https://billingku.net">Billingku</a> - BILLINGKU is a website and android based internet billing data management application. This application has been integrated with the payment gateway system, the mikrotik api system, the full whatsapp gateway system, and many others.</p>
-<p><a target="_blank"  href="https://laksa19.github.io/">Mikhmon Billing Hotspot</a> - MikroTik Hotspot Monitor "MIKHMON" is a web-based application (MikroTik API PHP class) to assist MikroTik Hotspot management. Especially MikroTik which does not support User Manager. Mikhmon is not a server radius, so it doesn't have to be always active. Mikhmon can be activated when needed or as needed.</p>
-<p><a target="_blank"  href="https://sarang.web.id/billing-hotspot-by-sarang-net/">Billing Hotspot By Sarang-Net</a> - Billing Hotspot By Sarang-Net is a desktop application use (MikroTik API PHP class) to assist MikroTik Hotspot management.</p>
-<p><a target="_blank"  href="https://topsetting.com">MIXRadius</a> - MIXRADIUS has many features that are very powerful and very stable which will make it easier for you to manage internet customers and hotspot voucher sales. </p>
-<p><a target="_blank"  href="https://rlradius.id/">RL-Radius</a> - RLRadius is a radius server, hotspot mikrotik billing and PPPoE integrated in one system, rich in features and can be used for many mikrotik routers on different networks and locations, with centralized db on one server.</p>
-<p><a target="_blank"  href="https://sourceforge.net/projects/the-userman">TheUserman</a> - TheUserman is Mikrotik Hotspot User Management Application Based on Desktop and Android, Mikrotik Hotspot Voucher Maker Application.</p>
-<p><a target="_blank"  href="https://github.com/ibnux/phpmixbill">PHPMixBill</a> - PHPMixBill is a Hotspot and PPPOE billing application for Mikrotik using the PHP programming language and using the Mikrotik API as communication with the router.</p>
-<p><a target="_blank"  href="https://github.com/aviantorichad/MIKROSTATOR">MIKROSTATOR</a> - MIKROSTATOR is an application that is used to perform administration on an internet network using a mikrotik router.</p>
-<p><a target="_blank"  href="https://mikbotam.net">MIKBOTAM</a> - Mikbotam is an application that makes it easy for hotspot services, because it makes it easier to generate usernames and passwords as well as easier user management with a pleasing web interface.</p>
-<br>
-
- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- mikrotiktool -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3815059393374366"
-     data-ad-slot="3756649336"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script> 
-<div style="margin-top:20px; text-align:center; font-size:14px"
-© Copyright 2020-2021 <a href="htpps://irfannjt.github.io/script/">Free Mikrotik Routeros Tools</a> is proudly powered by <a href="https://pages.github.com/">GitHub Pages</a> <br> Don't Forget to Follow <a href="https://github.com/irfannjt">My Github</a>   
+</div>
+<div class="welcome" id="welcome">
+<span style="float:left; display:inline;margin-right:6px; padding-top:-4px !important">
+<img src="https://irfannjt.github.io/script/mikrotik/img/logo.png" alt="Mikrotik Script RouterOS Database">
+</span>
+<h2>COMPLETE MIKROTIK SCRIPT ROUTEROS DATABASE</h2>
+<pre>
+<span style="line-height: 1.4;">
+We try to collect all the scripts found on the internet and combine them in one DataBase. Scripting host provides a way to automate some router maintenance tasks by means of executing user-defined scripts bounded to some event occurrence. Scripts can be stored in the Script repository or can be written directly to the console. The events used to trigger script execution include, but are not limited to the System Scheduler, the Traffic Monitoring Tool, and the Netwatch Tool generated events.</span>
+<span style="font-size:14px; font-weight:bold;">
+MMM      MMM       KKK                          TTTTTTTTTTT      KKK
+MMMM    MMMM       KKK                          TTTTTTTTTTT      KKK
+MMM MMMM MMM  III  KKK  KKK  RRRRRR     OOOOOO      TTT     III  KKK  KKK
+MMM  MM  MMM  III  KKKKK     RRR  RRR  OOO  OOO     TTT     III  KKKKK
+MMM      MMM  III  KKK KKK   RRRRRR    OOO  OOO     TTT     III  KKK KKK
+MMM      MMM  III  KKK  KKK  RRR  RRR   OOOOOO      TTT     III  KKK  KKK
+
+Mikrotik RouterOS Script          mikrotikscript.github.io/mikrotik</span>
+<span style="line-height: 1.4; text-align:justify !important;">
+Enjoy the most complete script to make it easier for you to learn Mikrotik RouterOS scripts!
+
+Send Your Mikrotik RouterOS Script For Contribution -> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbuzYtFCI57y7nJHgnL1w0aiCY5g45Uon90u3XQm6pAi56BQ/viewform"><b>Upload</b></a></span>
+</pre>
+</div>
+<iframe id="change-iframe-url" src=""></iframe>
+<div id="reloadads2" style="width:100%; height:90px; margin-top:10px; margin-left:5px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MIKROTIK SCRIPT DB3 -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:728px;height:90px"
+data-ad-client="ca-pub-3815059393374366"
+data-ad-slot="4637807296"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+</div> 
 </div>
 </div>
-<script type="text/javascript">
-var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
-function callmodal() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+<div class="footer">
+© Copyright 2020-2024 <a href="https://irfannjt.github.io/script/mikrotik/">Mikrotik Script RouterOS</a> is proudly powered by <a href="https://pages.github.com/">GitHub Pages</a> -  Don't Forget to Follow <a href="https://github.com/mikrotiktool">My Github</a>  
+</div>
+</div>
+<script>
+var _0x16a0=['indexOf','welcome','active1','setAttribute','reloadads1','click','(max-width:\x201024px)','scrollTop','display','matches','myTable','change-iframe-url','getAttribute','696989FcttDL','textContent','innerHTML','src','\x20active1','innerText','matchMedia','className','length','block','getElementsByClassName','addEventListener','3iVBdFk','405887ZZdEkn','hidden','1Hgacrg','href','1265053aZWOax','getElementById','316452UqFqVQ','411795QOexzs','linkPress','style','reloadads2','documentElement','1198806QFpvJw','none','body','1uBHBOu','378848kbnXit','getElementsByTagName','toUpperCase'];var _0x1f01=function(_0x406de6,_0x472444){_0x406de6=_0x406de6-0xe3;var _0x16a032=_0x16a0[_0x406de6];return _0x16a032;};var _0xb2676a=_0x1f01;(function(_0xaeba55,_0x459183){var _0x39382a=_0x1f01;while(!![]){try{var _0x235bb5=parseInt(_0x39382a(0x101))+-parseInt(_0x39382a(0xfb))*-parseInt(_0x39382a(0xfa))+parseInt(_0x39382a(0x107))+parseInt(_0x39382a(0x102))+-parseInt(_0x39382a(0x10b))+parseInt(_0x39382a(0x10a))*-parseInt(_0x39382a(0xff))+parseInt(_0x39382a(0xee))*-parseInt(_0x39382a(0xfd));if(_0x235bb5===_0x459183)break;else _0xaeba55['push'](_0xaeba55['shift']());}catch(_0x2c95cd){_0xaeba55['push'](_0xaeba55['shift']());}}}(_0x16a0,0xc43f0));function scrollFunction(){var _0x727571=_0x1f01;document[_0x727571(0x109)][_0x727571(0xe8)]>0x32||document[_0x727571(0x106)][_0x727571(0xe8)]>0x32?mybutton['style'][_0x727571(0xe9)]=_0x727571(0xf7):mybutton[_0x727571(0x104)]['display']='none';}function topFunction(){var _0x9b4b84=_0x1f01;document[_0x9b4b84(0x109)]['scrollTop']=0x0,document[_0x9b4b84(0x106)][_0x9b4b84(0xe8)]=0x0;}var mybutton=document[_0xb2676a(0x100)]('myBtn');window['onscroll']=function(){scrollFunction();};function truefalseFunction(_0x12174e){var _0x2b5d07=_0xb2676a;return _0x12174e[_0x2b5d07(0xea)]?!![]:![];}var x=window[_0xb2676a(0xf4)](_0xb2676a(0xe7));truefalseFunction(x),x['addListener'](truefalseFunction),document[_0xb2676a(0x100)](_0xb2676a(0xec))[_0xb2676a(0xfc)]=!![];function reloadads1(){var _0x325826=_0xb2676a;document[_0x325826(0x100)]('reloadads1')['innerHTML']=document['getElementById'](_0x325826(0xe5))[_0x325826(0xf0)];}function reloadads2(){var _0xd7209b=_0xb2676a;document[_0xd7209b(0x100)](_0xd7209b(0x105))[_0xd7209b(0xf0)]=document['getElementById'](_0xd7209b(0x105))[_0xd7209b(0xf0)];}function content(_0x25d5cf){var _0xd105d7=_0xb2676a,_0x190678=document[_0xd105d7(0x100)](_0xd105d7(0xec));_0x190678[_0xd105d7(0xe4)](_0xd105d7(0xf1),_0x25d5cf),document[_0xd105d7(0x100)]('change-iframe-url')[_0xd105d7(0xfc)]=![],document['getElementById'](_0xd105d7(0x10f))['hidden']=!![];}function getcontent(_0xb734e9){var _0x6b131c=_0xb2676a,_0x536f33=document[_0x6b131c(0x100)](_0x6b131c(0xec)),_0x61ad59=_0xb734e9[_0x6b131c(0xed)](_0x6b131c(0xfe));_0x536f33[_0x6b131c(0xe4)](_0x6b131c(0xf1),_0x61ad59),document['getElementById']('change-iframe-url')[_0x6b131c(0xfc)]=![],document['getElementById']('welcome')[_0x6b131c(0xfc)]=!![],reloadads1(),reloadads2();}function myFunctionSearch(){var _0x2f949e=_0xb2676a,_0x2a167b,_0x17830d,_0x1ca81b,_0x5168f6,_0x34534d,_0x37d9c4,_0x5112bf;_0x2a167b=document[_0x2f949e(0x100)]('myInput'),_0x17830d=_0x2a167b['value']['toUpperCase'](),_0x1ca81b=document[_0x2f949e(0x100)](_0x2f949e(0xeb)),_0x5168f6=_0x1ca81b['getElementsByTagName']('tr');for(_0x37d9c4=0x0;_0x37d9c4<_0x5168f6[_0x2f949e(0xf6)];_0x37d9c4++){_0x34534d=_0x5168f6[_0x37d9c4][_0x2f949e(0x10c)]('td')[0x0],_0x34534d&&(_0x5112bf=_0x34534d[_0x2f949e(0xef)]||_0x34534d[_0x2f949e(0xf3)],_0x5112bf[_0x2f949e(0x10d)]()[_0x2f949e(0x10e)](_0x17830d)>-0x1?_0x5168f6[_0x37d9c4]['style'][_0x2f949e(0xe9)]='':_0x5168f6[_0x37d9c4][_0x2f949e(0x104)]['display']=_0x2f949e(0x108));}}var header=document[_0xb2676a(0x100)]('myTable'),btns=header['getElementsByClassName'](_0xb2676a(0x103));for(var i=0x0;i<btns[_0xb2676a(0xf6)];i++){btns[i][_0xb2676a(0xf9)](_0xb2676a(0xe6),function(){var _0x58d0db=_0xb2676a,_0x3361e3=document[_0x58d0db(0xf8)](_0x58d0db(0xe3));_0x3361e3[0x0][_0x58d0db(0xf5)]=_0x3361e3[0x0][_0x58d0db(0xf5)]['replace'](_0x58d0db(0xf2),''),this[_0x58d0db(0xf5)]+='\x20active1';});}
 </script>
 </body>
 </html>
